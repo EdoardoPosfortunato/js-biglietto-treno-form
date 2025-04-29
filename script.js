@@ -45,12 +45,13 @@ const ageInput = document.getElementById("age"); // elemento del DOM, object
 
 
 // Prelevo elementi da compilare //
-const ageElem = document.querySelector("#ticket .età");
-const priceElem = document.querySelector("#ticket .price");
+let ageElem = document.querySelector("#ticket .età");
+let priceElem = document.querySelector("#ticket .price");
 
 // console.log(kilometriElem, priceElem)
 
-
+let kilometri 
+let age
 
 // Operazione di Submit //
 
@@ -58,12 +59,11 @@ informationForm.addEventListener("submit", submitForm);
 
 function submitForm(event) {
     event.preventDefault(); // ferma il ricaricamento della pagina
-    console.log("Ciao sono il form");
 
 
     // Prelevo tutti i valori degli input
-    const kilometri = kilometriInput.value;
-    const age = ageInput.value;
+    kilometri = kilometriInput.value;
+    age = ageInput.value;
 
 
     // si danno i valori agli elementi della card
@@ -72,7 +72,7 @@ function submitForm(event) {
 
     // funzione logica //
 
-    let price = kilometri * 1;
+    let price = kilometri * 0.21;
 
     if (age <= 18) {
         price = price * 0.8;
@@ -80,10 +80,21 @@ function submitForm(event) {
     } else if (age >= 65) {
         price = price * 0.6;
 
-    } 
+    }
 
 
     priceElem.innerHTML = `${price} euro`;
 
+
+}
+
+
+informationForm.addEventListener("reset", resetForm);
+
+function resetForm() {
+    
+
+    ageElem.innerHTML = "";
+    priceElem.innerHTML = "";
 
 }
