@@ -13,43 +13,57 @@
 </head>
 
 <body>
-    <form action="" id="informations">
-        <div class="col-12 col-lg-6">
-            <label class="form-label" for="kilometri">Kilometri da percorrere</label>
-            <input class="form-control" type="number" id="kilometri" placeholder="... inserire i kilometri " />
+    <div class="container-fluid my-3">
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-lg-6 row justify-content-center">
+
+                <form action="" id="informations">
+                    <div class="col-12 row justify-content-center">
+                        <div class="col-12">
+                            <label class="form-label" for="kilometri">Kilometri da percorrere</label>
+                            <input class="form-control" type="number" id="kilometri"
+                                placeholder="... inserire i kilometri " />
+                        </div>
+                        <div class="col-12 pt-3">
+                            <label class="form-label" for="age">Kilometri da percorrere</label>
+                            <input class="form-control" type="number" id="age" placeholder="... inserire età " />
+                        </div>
+                        <div class="row col-6">
+
+                            <div class="col-6 col-lg-6 pt-3">
+                                <button class="btn btn-primary mt-2" type="submit">
+                                    Conferma
+                                </button>
+                            </div>
+                            <div class="col-6 col-lg-6 pt-3">
+                                <button class="btn btn-primary mt-2" type="reset">
+                                    Resetta
+                                </button>
+                            </div>
+                        </div>
+
+                </form>
+            </div>
+
         </div>
-        <div class="col-12 col-lg-6">
-            <label class="form-label" for="age">Kilometri da percorrere</label>
-            <input class="form-control" type="number" id="age" placeholder="... inserire età " />
-        </div>
-        <div class="col-12 col-lg-6 pt-4">
-            <button class="btn btn-primary mt-2" type="submit">
-              Conferma
-            </button>
-          </div>
-          <div class="col-12 col-lg-6 pt-4">
-            <button class="btn btn-primary mt-2" type="reset">
-              Annulla
-            </button>
-          </div>
-
-    </form>
-
-
-    <div class="col-12 my-5">
-        <div class="card" id="ticket">
-            <div class="card-header">Biglietto</div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="età">età</p>
-                        <p class="price">prezzo totale</p>
+        <div class="col-12 col-lg-6 my-5">
+            <div class="card" id="ticket">
+                <div class="card-header">Biglietto</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="età"></p>
+                            <p class="price"></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+    </div>
 
-        <script src="./script.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
