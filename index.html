@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
 
 </head>
-<body>
-    <form action="" id="tickets">
-        <div class="col-12 col-lg-6">
-            <label class="form-label" for="name">Nome e cognome</label>
-            <input class="form-control" type="text" id="name" />
-          </div>
 
+<body>
+    <form action="" id="informations">
+        <div class="col-12 col-lg-6">
+            <label class="form-label" for="kilometri">Kilometri da percorrere</label>
+            <input class="form-control" type="number" id="kilometri" placeholder="... inserire i kilometri " />
+        </div>
+        <div class="col-12 col-lg-6">
+            <label class="form-label" for="age">Kilometri da percorrere</label>
+            <input class="form-control" type="number" id="age" placeholder="... inserire età " />
+        </div>
+        <div class="col-12 col-lg-6 pt-4">
+            <button class="btn btn-primary mt-2" type="submit">
+              Conferma
+            </button>
+          </div>
+          <div class="col-12 col-lg-6 pt-4">
+            <button class="btn btn-primary mt-2" type="reset">
+              Annulla
+            </button>
+          </div>
 
     </form>
 
 
-    <script src="./script.js"></script>
+    <div class="col-12 my-5">
+        <div class="card" id="ticket">
+            <div class="card-header">Biglietto</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="età">età</p>
+                        <p class="price">prezzo totale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
 
 </body>
+
 </html>
