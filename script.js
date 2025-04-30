@@ -83,7 +83,7 @@ function submitForm(event) {
     }
 
 
-    priceElem.innerHTML = `${price} euro`;
+    priceElem.innerHTML = `${price.toFixed(2)} euro`;
 
 
 }
